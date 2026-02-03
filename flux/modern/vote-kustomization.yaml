@@ -5,7 +5,7 @@ metadata:
   namespace: instavote
 spec:
   interval: 5m
-  path: ./kustomize/vote
+  path: ./kustomize/vote/staging
   prune: true
   sourceRef:
     kind: GitRepository

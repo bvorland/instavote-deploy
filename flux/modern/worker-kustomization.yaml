@@ -5,7 +5,7 @@ metadata:
   namespace: instavote
 spec:
   interval: 5m
-  path: ./kustomize/worker
+  path: ./kustomize/worker/staging
   prune: true
   sourceRef:
     kind: GitRepository
