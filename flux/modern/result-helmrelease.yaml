@@ -15,5 +15,7 @@ spec:
   values:
     replicaCount: 1
     service:
-      type: ClusterIP
+      type: LoadBalancer
       port: 80
+      annotations:
+        service.beta.kubernetes.io/azure-load-balancer-internal: "true"
