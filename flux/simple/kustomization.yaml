@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+resources:
+# Core infrastructure
+- ../base/db-helmrelease.yaml
+- ../base/db-helmrepository.yaml
+- ../base/instavote-gitrepository.yaml
+# Deployments
+- ../base/redis-staging-kustomization.yaml
+- ../base/result-helmrelease.yaml
+- ../base/vote-staging-kustomization.yaml
+- ../base/worker-staging-kustomization.yaml
