@@ -4,6 +4,7 @@ resources:
 - redis-kustomization.yaml
 - vote-kustomization.yaml
 - worker-kustomization.yaml
-- db-helmrepository.yaml
-- db-helmrelease.yaml
+# Note: Using Azure PostgreSQL Flexible Server instead of in-cluster DB
+# - db-helmrepository.yaml
+# - db-helmrelease.yaml
 - result-helmrelease.yaml
